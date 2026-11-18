@@ -1,0 +1,23 @@
+Servicio : Internet dedicado simetrico 200 Mbps - Agricola Valle de Elqui
+Periodo  : 2026-09 (30 dias, 43200 min)
+Cobertura minima exigida: 90 %
+
+Metrica        Objetivo      Medido        Cobertura  Veredicto               Credito
+disponibilidad >= 99.9 %     99.63 %        100.00 %  NO CUMPLE               10 %
+latencia       <= 30 ms      27.40 ms        98.90 %  CUMPLE                  0 %
+jitter         <= 10 ms      9.92 ms         98.90 %  CUMPLE                  0 %
+perdida        <= 0.5 %      -               60.00 %  EVIDENCIA INSUFICIENTE  0 %
+throughput     >= 180 Mbps   180.75 Mbps    100.00 %  CUMPLE                  0 %
+respuesta      <= 60 min     66.00 min      100.00 %  NO CUMPLE               5 %
+mttr           <= 240 min    75.00 min      100.00 %  CUMPLE                  0 %
+
+Caida atribuible : 55 + 75 + 30 = 160 min
+Caida permitida  : 43.20 min   Exceso: 116.80 min
+Jitter ponderado : 423808.5 / 42725 = 9.92 ms (promedio simple 10.13 ms, no aplica)
+Respuesta        : 3 de 4 tickets dentro del umbral; fuera: INC-2672 (66 min)
+Mttr             : 3 de 3 tickets dentro del umbral
+
+Credito: 10 % + 5 % = 15 % (tope 50 %) -> aplicado 15 % x $1,200,000 = $180,000
+VEREDICTO GLOBAL: NO CUMPLE
+
+Viabilidad: serie actual 99.730 % (caida esperada 116.6 min/mes) | con respaldo en paralelo 99.929 % (30.7 min/mes) | permitido 43.20 min/mes
