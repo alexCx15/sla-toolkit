@@ -1,0 +1,38 @@
+# Objetivos del SLA - Agricola Valle de Elqui SpA / NorteNet Telecomunicaciones
+# Fuente: extracto del contrato (sla.md). Clausula indicada en cada campo.
+servicio: "Internet dedicado simetrico 200 Mbps - Agricola Valle de Elqui"
+cliente: "Agricola Valle de Elqui SpA"
+proveedor: "NorteNet Telecomunicaciones"
+periodo: "2026-09"
+dias_periodo: 30
+minutos_periodo: 43200          # 30 x 1440
+cobertura_minima: 0.90          # 5.1
+cargo_mensual: 1200000          # 8.4 (CLP neto)
+tope_credito: 0.50              # 8.3
+velocidad_contratada: 200       # 2.1 (Mbps)
+
+metricas:
+  disponibilidad: {clausula: "3.1", operador: ">=", objetivo: 99.9, unidad: "%",    estadistico: acumulado_mensual}
+  latencia:       {clausula: "3.2", operador: "<=", objetivo: 30,   unidad: "ms",   estadistico: promedio}
+  jitter:         {clausula: "3.3", operador: "<=", objetivo: 10,   unidad: "ms",   estadistico: promedio_ponderado}
+  perdida:        {clausula: "3.4", operador: "<=", objetivo: 0.5,  unidad: "%",    estadistico: valor_mensual}
+  throughput:     {clausula: "3.5", operador: ">=", objetivo: 180,  unidad: "Mbps", estadistico: promedio, pruebas_minimas: 4}
+  respuesta:      {clausula: "4.1", operador: "<=", objetivo: 60,   unidad: "min",  estadistico: todos}
+  mttr:           {clausula: "4.2", operador: "<=", objetivo: 240,  unidad: "min",  estadistico: todos}
+
+creditos_disponibilidad:        # 8.1
+  - {desde: 99.5, hasta: 99.9, credito: 0.10}
+  - {desde: 99.0, hasta: 99.5, credito: 0.25}
+  - {desde: 0.0,  hasta: 99.0, credito: 0.50}
+credito_otras: 0.05             # 8.2
+metricas_credito_otras: [latencia, jitter, perdida, throughput, respuesta]
+
+# Anexo 7 - disponibilidad anual por componente (datos del proveedor)
+infraestructura:
+  serie:
+    - {componente: "CPE",                          disponibilidad: 99.95}
+    - {componente: "Fibra de acceso (ruta unica)", disponibilidad: 99.80, respaldo: "acceso"}
+    - {componente: "PE La Serena",                 disponibilidad: 99.99}
+    - {componente: "Backbone",                     disponibilidad: 99.99}
+  respaldo:
+    - {componente: "Radioenlace de acceso",        disponibilidad: 99.50, paralelo_con: "acceso"}
