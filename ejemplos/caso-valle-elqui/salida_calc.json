@@ -1,0 +1,163 @@
+{
+  "metricas": {
+    "disponibilidad": {
+      "medido": 99.62962962962963,
+      "cobertura": 1.0,
+      "veredicto": "NO CUMPLE",
+      "credito": 0.1,
+      "detalle": {
+        "T": 43200,
+        "caidas": [
+          55.0,
+          75.0,
+          30.0
+        ],
+        "caida_atribuible": 160.0,
+        "permitido": 43.19999999999524,
+        "exceso": 116.80000000000476
+      }
+    },
+    "latencia": {
+      "medido": 27.4,
+      "cobertura": 0.9890046296296297,
+      "veredicto": "CUMPLE",
+      "detalle": {
+        "muestras": 42725,
+        "esperadas": 43200
+      },
+      "credito": 0.0
+    },
+    "jitter": {
+      "medido": 9.919449970743125,
+      "cobertura": 0.9890046296296297,
+      "veredicto": "CUMPLE",
+      "detalle": {
+        "semanas": [
+          [
+            9.0,
+            9870
+          ],
+          [
+            10.5,
+            10025
+          ],
+          [
+            13.8,
+            9900
+          ],
+          [
+            7.2,
+            12930
+          ]
+        ],
+        "productos": [
+          88830.0,
+          105262.5,
+          136620.0,
+          93096.0
+        ],
+        "suma_productos": 423808.5,
+        "muestras": 42725,
+        "promedio_simple": 10.13
+      },
+      "credito": 0.0
+    },
+    "perdida": {
+      "medido": 0.31,
+      "cobertura": 0.6,
+      "veredicto": "EVIDENCIA INSUFICIENTE",
+      "detalle": {
+        "muestras": 25920,
+        "esperadas": 43200
+      },
+      "credito": 0.0
+    },
+    "throughput": {
+      "medido": 180.75,
+      "cobertura": 1.0,
+      "veredicto": "CUMPLE",
+      "detalle": {
+        "pruebas": [
+          186.0,
+          182.0,
+          171.0,
+          184.0
+        ],
+        "suma": 723.0,
+        "minimo": 4
+      },
+      "credito": 0.0
+    },
+    "respuesta": {
+      "medido": 66.0,
+      "cobertura": 1.0,
+      "veredicto": "NO CUMPLE",
+      "detalle": {
+        "tickets": [
+          [
+            "INC-2611",
+            23.0
+          ],
+          [
+            "INC-2648",
+            33.0
+          ],
+          [
+            "INC-2672",
+            66.0
+          ],
+          [
+            "INC-2690",
+            7.0
+          ]
+        ],
+        "cumplen": 3,
+        "total": 4,
+        "fuera": [
+          [
+            "INC-2672",
+            66.0
+          ]
+        ]
+      },
+      "credito": 0.05
+    },
+    "mttr": {
+      "medido": 75.0,
+      "cobertura": 1.0,
+      "veredicto": "CUMPLE",
+      "detalle": {
+        "tickets": [
+          [
+            "INC-2611",
+            55.0
+          ],
+          [
+            "INC-2672",
+            75.0
+          ],
+          [
+            "INC-2690",
+            30.0
+          ]
+        ],
+        "cumplen": 3,
+        "total": 3,
+        "fuera": []
+      },
+      "credito": 0.0
+    }
+  },
+  "credito_suma": 0.15000000000000002,
+  "credito_aplicado": 0.15000000000000002,
+  "monto": 180000.00000000003,
+  "veredicto_global": "NO CUMPLE",
+  "viabilidad": {
+    "serie": 99.73015097750098,
+    "con_respaldo": 99.92901169938999,
+    "acceso_paralelo": 99.99900000000001,
+    "caida_esperada_serie": 116.57477771957386,
+    "caida_esperada_respaldo": 30.666945863523765,
+    "permitido": 43.19999999999524
+  }
+}

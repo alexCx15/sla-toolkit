@@ -1,0 +1,24 @@
+body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 10.5pt; color: #1d2433; line-height: 1.42; max-width: 100%; margin: 0; }
+header#title-block-header { display: none; }
+h2 { font-size: 15pt; color: #12355b; border-bottom: 2px solid #12355b; padding-bottom: 3px; margin-top: 26px; page-break-after: avoid; }
+h3 { font-size: 12pt; color: #12355b; margin-top: 18px; page-break-after: avoid; }
+p { margin: 6px 0 8px; text-align: justify; }
+em { color: #4a5568; }
+table { border-collapse: collapse; width: 100%; margin: 6px 0 14px; font-size: 8.6pt; page-break-inside: auto; }
+tr { page-break-inside: avoid; }
+th { background: #12355b; color: #fff; text-align: left; padding: 4px 5px; font-weight: bold; }
+td { border-bottom: 1px solid #cfd6e0; padding: 4px 5px; vertical-align: top; }
+tbody tr:nth-child(even) td { background: #f3f6fa; }
+pre { background: #f3f6fa; border-left: 3px solid #12355b; padding: 7px 9px; font-size: 8.2pt; line-height: 1.35; white-space: pre-wrap; page-break-inside: avoid; }
+code { font-family: "DejaVu Sans Mono", monospace; }
+ul { margin: 4px 0 8px; }
+li { margin: 3px 0; }
+.resumen { border: 1.5px solid #12355b; background: #eef3f9; padding: 8px 14px; }
+.salto { page-break-after: always; }
+.portada { padding-top: 120px; }
+.portada .etiqueta { text-transform: uppercase; letter-spacing: 2px; color: #4a5568; font-size: 10pt; }
+.portada .titulo { font-size: 24pt; color: #12355b; line-height: 1.2; border: none; margin: 10px 0 6px; }
+.portada .subtitulo { font-size: 13pt; color: #4a5568; margin-bottom: 60px; }
+.datos-portada { font-size: 11pt; width: 85%; }
+.datos-portada th { background: none; color: #12355b; width: 32%; border-bottom: 1px solid #cfd6e0; }
+.datos-portada td { background: none !important; }
