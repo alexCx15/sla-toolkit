@@ -13,7 +13,7 @@ lang: es-CL
 <tr><th>Integrante</th><td>{integrantes}</td></tr>
 <tr><th>Docente</th><td>{docente}</td></tr>
 <tr><th>Fecha</th><td>{fecha}</td></tr>
-<tr><th>Repositorio (tag v1.1)</th><td>{repositorio}</td></tr>
+<tr><th>Repositorio (tag v1.1)</th><td>{repositorio}/tree/v1.1</td></tr>
 </table>
 </div>
 
@@ -37,7 +37,7 @@ lang: es-CL
 | Servicios del cliente sobre el enlace | ERP, trazabilidad de exportación y telefonía IP |
 | Cargo mensual | ${cargo} neto (cláusula 8.4) |
 | Integrante | {integrantes} |
-| Repositorio | {repositorio} |
+| Repositorio | {repositorio}/tree/v1.1 (tag v1.1) |
 
 ## 02. Resumen ejecutivo
 
