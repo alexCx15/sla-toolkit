@@ -37,7 +37,7 @@ lang: es-CL
 | Servicios del cliente sobre el enlace | ERP, trazabilidad de exportación y telefonía IP |
 | Cargo mensual | $1.200.000 neto (cláusula 8.4) |
 | Integrante | Alexander Cortes |
-| Repositorio | https://github.com/USUARIO/sla-toolkit/tree/v1.1 |
+| Repositorio | https://github.com/USUARIO/sla-toolkit/tree/v1.1 (tag v1.1) |
 
 ## 02. Resumen ejecutivo
 
@@ -335,7 +335,7 @@ Nivel de automatización: **intermedio-avanzado**. Un solo comando (`make inform
 ### 9.3 Comandos para regenerar el informe
 
 ```
-git clone https://github.com/USUARIO/sla-toolkit/tree/v1.1
+git clone https://github.com/USUARIO/sla-toolkit
 cd sla-toolkit && git checkout v1.1
 pip install pyyaml          # requiere también pandoc y wkhtmltopdf
 make informe                # calc_sla.py → generar_informe.py → pandoc
@@ -469,7 +469,8 @@ Cobertura pérdida: mínimo 38.880 min − registrados 25.920 min = faltan 12.96
 ### Anexo E — Historial de commits y CHANGELOG
 
 ```
-edfdcce (HEAD -> caso/valle-elqui) docs: CHANGELOG v1.1 con mejoras pendientes
+c1d393d (HEAD -> caso/valle-elqui) automatizacion: enlace del repositorio en portada
+edfdcce docs: CHANGELOG v1.1 con mejoras pendientes
 697243e automatizacion: plantilla, generar_informe.py y Makefile (make informe)
 ae094e4 calculos: salida de calc_sla.py con jitter ponderado, respuesta, MTTR y credito
 e051ed9 datos: contrato, objetivos y mediciones validas del caso Valle de Elqui
